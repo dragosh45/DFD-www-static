@@ -1,1 +1,107 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    height: 100%;
+    
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background: radial-gradient(circle at top left, #101223, #0b0519);
+    color: #69a6de;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  #outlines {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Align vertically */
+    flex-wrap: wrap;
+    gap: 20px; /* Add spacing between buttons */
+    list-style: none;
+    padding: 0;
+    margin: auto; /* Ensure full centering */
+    width: fit-content; /* Only take needed space */
+}
+
+#outlines li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+  
+  #outlines li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+  }
+
+    main {
+        max-width: 95%;
+    }
+    .welcome-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px; /* Adjust as needed */
+      margin-top: 50px;
+  }
+  
+  .welcome-text {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #69a6de; /* Matches title */
+    margin-top: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.intro-text {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: #c0d6e4;
+    margin-top: 10px;
+    padding: 0 15%;
+}
+.outline-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.outline-avatar {
+  width: 40px;  /* Adjust size as needed */
+  height: 40px;
+  border-radius: 50%; /* Makes it circular */
+  margin-right: 10px;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: none;
+  background-color: #2c2f3f;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 160px;
+}
+button span {
+  font-size: 1rem;
+  font-weight: bold;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}

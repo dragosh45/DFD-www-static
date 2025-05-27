@@ -1,0 +1,4 @@
+<button (click)="selectOutline()">
+    <img *ngIf="outline?.avatar" [src]="outline.avatar" [alt]="outline.name" class="outline-avatar">
+    <span>{{ outline.name }}</span>
+</button>
